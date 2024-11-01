@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-moz-selection {
+  color: #000;
+  background: #fff;
+}
+
+::selection {
+  color: #000;
+  background: #fff;
+}
