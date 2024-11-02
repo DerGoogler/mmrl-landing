@@ -29,6 +29,7 @@ program
         name: "github-actions[bot]",
         email: "github-actions[bot]@users.noreply.github.com",
       },
+      dotfiles: true,
       add: false,
     });
   });
