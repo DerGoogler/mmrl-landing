@@ -160,6 +160,10 @@ const config: Configuration = {
         onEnd: {
           copy: [
             {
+              source: resolve(__dirname, "web/.well-known", "**/*"),
+              destination: resolve(__dirname, outputPath, ".well-known"),
+            },
+            {
               source: resolve(__dirname, "web/assets", "**/*"),
               destination: resolve(__dirname, outputPath, "assets"),
             },
