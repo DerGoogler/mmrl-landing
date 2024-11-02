@@ -22,14 +22,14 @@ program
       repo: `https://github.com/${opt.owner}/${opt.name}.git`,
       dest: opt.prerelease ? "prerelease" : ".",
       nojekyll: true,
-      cname: config.cname,
+      cname: "mmrl.dergoogler.com",
       remote: opt.remote,
       message: "CLI Auto-generated MMRL Web Update",
       user: {
         name: "github-actions[bot]",
         email: "github-actions[bot]@users.noreply.github.com",
       },
-      add: true,
+      add: false,
     });
   });
 
